@@ -70,16 +70,16 @@ try {
   const postData = JSON.stringify(bomPayload);
 
   const requestOptions = {
-      hostname: serverHostname,
-      port: port,
-      protocol: protocol + ':',
-      path: '/api/v1/bom',
-      method: 'PUT',
-      headers: {
-        'X-API-Key': apiKey,
-        'Content-Type': 'application/json',
-        'Content-Length': Buffer.byteLength(postData)
-      }
+    hostname: serverHostname,
+    port: port,
+    protocol: protocol + ':',
+    path: '/api/v1/bom',
+    method: 'PUT',
+    headers: {
+      'X-API-Key': apiKey,
+      'Content-Type': 'application/json',
+      'Content-Length': Buffer.byteLength(postData)
+    }
   }
 
   core.info(`Uploading to Dependency-Track server ${serverHostname}...`);

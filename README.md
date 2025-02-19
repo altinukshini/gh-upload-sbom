@@ -58,6 +58,12 @@ Parent project uuid in Dependency-Track (available in DT v4.8 and later)
 
 **parentName is also required** Parent project version in Dependency-Track (available in DT v4.8 and later)
 
+## Outputs
+
+### `token`
+
+`token` reponse from Dependency-Track server after SBOM file has been uploaded
+
 ## Example usage
 
 With project name and version:

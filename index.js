@@ -91,6 +91,9 @@ async function run() {
     const response = await fetch(url.toString(), requestOptions);
 
     if (response.ok) {
+      const responseJson = await response.json();
+      const token = responseJson.token;
+      core.setOutput('token', token);
       core.info('Finished uploading BOM to Dependency-Track server.');
     } else {
       const responseBody = await response.text();
